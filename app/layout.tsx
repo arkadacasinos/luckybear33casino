@@ -24,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="ru" className={`${playfair.variable} ${manrope.variable}`}>
       <head>
+        <meta name="yandex-verification" content="46f6a2412211bfb6" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#1e4d3b" />
