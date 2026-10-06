@@ -1,0 +1,250 @@
+/* LuckyBear landing — собственные стили, уникальные префиксы классов */
+
+:root {
+  --lb7x-forest: #1e4d3b;
+  --lb7x-forest-deep: #143528;
+  --lb7x-gold: #d9a441;
+  --lb7x-gold-soft: #e9c67e;
+  --lb7x-cream: #f6f1e7;
+  --lb7x-sage: #e7dfcf;
+  --lb7x-ink: #211b13;
+  --lb7x-muted: #6d6353;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--lb7x-cream);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--lb7x-cream);
+  color: var(--lb7x-ink);
+  font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.lb7x-wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Шапка */
+.lb7x-header {
+  background: var(--lb7x-forest);
+  color: var(--lb7x-cream);
+}
+
+.lb7x-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.lb7x-brand {
+  font-family: var(--font-heading), serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: var(--lb7x-gold);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.lb7x-brand em {
+  font-style: normal;
+  color: var(--lb7x-cream);
+}
+
+.lb7x-header-cta {
+  display: inline-block;
+  background: var(--lb7x-gold);
+  color: var(--lb7x-forest-deep);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 9px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.lb7x-header-cta:hover {
+  background: var(--lb7x-gold-soft);
+}
+
+/* Герой */
+.lb7x-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 40px 0 44px;
+}
+
+.lb7x-hero-copy h1 {
+  font-family: var(--font-heading), serif;
+  font-size: 2.05rem;
+  line-height: 1.14;
+  font-weight: 700;
+  color: var(--lb7x-forest);
+  margin: 0 0 16px;
+  text-wrap: balance;
+}
+
+.lb7x-hero-copy p {
+  font-size: 1.04rem;
+  color: var(--lb7x-muted);
+  margin: 0 0 24px;
+  text-wrap: pretty;
+}
+
+.lb7x-cta {
+  display: inline-block;
+  background: var(--lb7x-gold);
+  color: var(--lb7x-forest-deep);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 14px 30px;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.lb7x-cta:hover {
+  background: var(--lb7x-gold-soft);
+}
+
+.lb7x-hero-img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 18px 40px -22px rgba(20, 53, 40, 0.55);
+}
+
+/* Секции */
+.lb7x-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.lb7x-section {
+  padding: 40px 0;
+  border-top: 1px solid var(--lb7x-sage);
+}
+
+.lb7x-section h2 {
+  font-family: var(--font-heading), serif;
+  font-size: 1.55rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--lb7x-forest);
+  margin: 0 0 14px;
+  text-wrap: balance;
+}
+
+.lb7x-section p {
+  font-size: 1rem;
+  color: var(--lb7x-ink);
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.lb7x-figure {
+  margin: 22px 0 0;
+}
+
+.lb7x-figure img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+}
+
+.lb7x-figure figcaption {
+  font-size: 0.82rem;
+  color: var(--lb7x-muted);
+  margin-top: 8px;
+}
+
+/* Подвал */
+.lb7x-footer {
+  background: var(--lb7x-forest);
+  color: var(--lb7x-cream);
+  padding: 42px 0 36px;
+  margin-top: 24px;
+}
+
+.lb7x-footer-title {
+  font-family: var(--font-heading), serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--lb7x-gold);
+  margin: 0 0 16px;
+}
+
+.lb7x-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.lb7x-tags a {
+  color: var(--lb7x-gold-soft);
+  text-decoration: none;
+  font-size: 0.84rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 6px 13px;
+  border-radius: 999px;
+  transition: background 0.15s ease;
+}
+
+.lb7x-tags a:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.lb7x-copy {
+  font-size: 0.84rem;
+  opacity: 0.68;
+  margin: 0;
+}
+
+/* Планшет и десктоп */
+@media (min-width: 768px) {
+  .lb7x-hero {
+    flex-direction: row;
+    align-items: center;
+    gap: 52px;
+    padding: 64px 0;
+  }
+
+  .lb7x-hero-copy {
+    flex: 1 1 0;
+  }
+
+  .lb7x-hero-copy h1 {
+    font-size: 2.85rem;
+  }
+
+  .lb7x-hero-img {
+    flex: 0 0 380px;
+    margin: 0;
+  }
+
+  .lb7x-section {
+    padding: 56px 0;
+  }
+
+  .lb7x-section h2 {
+    font-size: 2rem;
+  }
+}
